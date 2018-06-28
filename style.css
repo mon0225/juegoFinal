@@ -1,0 +1,29 @@
+.Ironhack crash{
+font-size: 3em;
+color: purple;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+padding-left: 200px;
+}
+#game-board{
+    text-align: center;
+    color: black;
+    padding-left: 30px;
+    opacity: 1;
+}
+#canvas{
+    padding-left: 50px;
+    margin-left: 150 px;
+}
+#start-button{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: red;
+    color: white;
+    margin-left: 580px;
+    width: 350px;
+    height: 80px;
+    border: 10p x solid red;
+    border-radius: 15px;
+}
