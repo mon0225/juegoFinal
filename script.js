@@ -23,7 +23,7 @@ var images = {
     item13: './poop happy.png',
     item14: './manzana.png',
     item15: './Pet-Bottle-512.png',
-    //score1: './men2.png',
+    score1: './men2.png',
     score2: './women.png',
 
     bg: 'https://static.wixstatic.com/media/36b7ba_bdfe0078ddf544db9c08b54fded5867c~mv2.jpg'
@@ -276,20 +276,6 @@ class Score{
     }
 }
 
-function draw() {
-    
-    var img = new Image();
-      img.src = "./men.png";
-      // Importante el onload
-      img.onload = function(){
-        ctx.drawImage(img, 390, 680);
-  
-    }
-  }draw()
-
-
-
-
 class Teacher{
         constructor(x, y, width, height){
         this.x = x;
@@ -361,11 +347,11 @@ function update(){
     teacher.draw()
     generateItem();
     checkScore();
-   // score1.draw();
+    score1.draw();
     //generateScore(); 
     
       
-   // sound.play()
+   sound.play()
 } 
 
 function startGame(){
@@ -374,7 +360,7 @@ function startGame(){
     //changePlayer();
     //generateItem();
     generateScore();
-    //sound.play()
+    sound.play()
     
 } 
 
@@ -445,8 +431,8 @@ function generateScore(){
     
     //if(!(frames%100===0) ) return;
     //var height = 100; //Math.floor((Math.random() * canvas.height * .6 ) + 30 );
-    var score1 = new Score(100,300,50,400);
-    var score2 = new Score(20,500, 700,200);
+    var score1 = new Score(0,0,0,0);
+    var score2 = new Score(0,0, 700,200);
 
     scores.push(score1);
     scores.push(score2);
@@ -531,13 +517,13 @@ function checkScore(){
 function gameOver(player) {
     ctx.clearRect(0,0,canvas.width,canvas.height);
     if (player == playerOne){
-        ctx.fillText('Congratulations!!!' , canvas.width/2-400, canvas.height/2-100);
-        ctx.fillText('Player 1 wins:', canvas.width/2-300, canvas.height/2-50)
+        ctx.fillText('Congratulations!!!' , canvas.width/2-400, canvas.height/2-50,500,400);
+        ctx.fillText('Player 1 wins', canvas.width/2-150, canvas.height/2-200)
         ctx.fillStyle = "black";
         ctx.font = 'bold 70px sans-serif';
     }else if(player == playerTwo){
-        ctx.fillText('Congratulations!!!' , canvas.width/2-400, canvas.height/2-100);
-        ctx.fillText('Player 2 wins:', canvas.width/2-300, canvas.height/2-50)
+        ctx.fillText('Congratulations!!!' , canvas.width/2-400, canvas.height/2-50,500,400);
+        ctx.fillText('Player 2 wins', canvas.width/2-150, canvas.height/2-200)
     }
     clearInterval(interval);
     sound.pause();

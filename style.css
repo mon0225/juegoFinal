@@ -8,6 +8,8 @@ padding-left: 200px;
 #game-board{
     text-align: center;
     color: black;
+    display: flex;
+    align-items: center;
    
 }
 #canvas{
@@ -18,10 +20,10 @@ padding-left: 200px;
     text-align: center;
     font-size: 2.5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: red;
-    color: white;
-    margin-left: 580px;
-    width: 350px;
+    background-color: aqua;
+    color: black;
+    margin-left: 630px;
+    width: 250px;
     height: 80px;
     border: 10p x solid red;
     border-radius: 15px;
@@ -29,14 +31,38 @@ padding-left: 200px;
 #score1{
     display: flex;
     align-content: inherit;
-    padding-left: 200px;
-    padding-top: 100px;  
-
+    padding-left: 205px;
+    padding-top: 2px;  
+}
+#score2{
+    display: flex;
+    align-content: inherit;
+    padding-left: 876px;
+    padding-top: 10px;  
+}
+.contenedor{
+    display:flex;
+    align-items: baseline;
+    padding-left: -100px;
+   
+}
+.contenedor2{
+    display:flex;
+    align-items: baseline;
+    padding-left: 100px;
+    width: 400px;
+    border-top: 500px; 
 }
 #instrucciones{
     text-align: center;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
     font-style: normal;
     color: black;
+}
+#texto{
+    text-align: center;
+    font-size: 1.4em;
+    color: red;
+
 }
