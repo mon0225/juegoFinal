@@ -499,11 +499,11 @@ function drawItem(){
 
 function checkScore(){
    // console.log('checando', point1.score, point2.score)
-    if (point1.score>=10 ){
+    if (point1.score>=30 ){
        // console.log(scores.playerOne> scores.playerTwo)
         gameOver(playerOne)
     }
-    if (point2.score>=10 ){
+    if (point2.score>=30 ){
         //console.log(scores.playerOne> scores.playerTwo)
         gameOver(playerTwo)
     }
