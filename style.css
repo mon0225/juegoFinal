@@ -8,8 +8,7 @@ padding-left: 200px;
 #game-board{
     text-align: center;
     color: black;
-    padding-left: 30px;
-    opacity: 1;
+   
 }
 #canvas{
     padding-left: 50px;
@@ -26,4 +25,18 @@ padding-left: 200px;
     height: 80px;
     border: 10p x solid red;
     border-radius: 15px;
+}
+#score1{
+    display: flex;
+    align-content: inherit;
+    padding-left: 200px;
+    padding-top: 100px;  
+
+}
+#instrucciones{
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.3em;
+    font-style: normal;
+    color: black;
 }
